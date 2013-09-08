@@ -41,7 +41,9 @@ Public key-based authentication allows you to access resources without explicitl
 
 Linux / MacOSX / Unix
 ---------------------
-OpenSSH-based clients typically include a command named ``ssh-keygen`` which is used to generate the private and public keys. Once generated, the public key can be copied to the server using ``ssh-copy-id``. Note: MacOSX does not ship with ``ssh-copy-id``; a copy is available here: `ssh-copy-id <https://gist.github.com/andrewseidl/6488345>`_.
+OpenSSH-based clients typically include a command named ``ssh-keygen`` which is used to generate the private and public keys. Once generated, the public key can be copied to the server using ``ssh-copy-id``. 
+
+.. note:: MacOSX does not ship with ``ssh-copy-id``; a copy is available here: `ssh-copy-id <https://gist.github.com/andrewseidl/6488345>`_.
 
 On Linux:
 
@@ -109,7 +111,7 @@ Remote X Sessions via NX
 ------------------------
 It is sometimes desirable to use X11-/GUI-based programs from Euler. While Unix-like systems can forward this programs directly using ``ssh -X``, Windows users typically need to install and configure an X server such as `Xming <http://www.straightrunning.com/XmingNotes/>`_. Alternatively, Euler allows users to create a remote X session using `NoMachine NX <http://www.nomachine.com>`_.
 
-`Note: NX on Euler should be considered unsupported and legacy. It may not always work and may be replaced in the future.`
+.. warning:: NX on Euler should be considered unsupported and legacy. It may not always work and may be replaced in the future.
 
 To begin, download and install the `NoMachine 4 Beta Client <http://www.nomachine.com/download-beta.php>`_ for your system. While that is installing, login to Euler via SSH and run ``cat /home/nx/client.id_dsa.key`` to get a copy of NX's key. Save this to a file on your machine.
 
@@ -117,4 +119,4 @@ Next, open NoMachine and click the icon for `Add a computer`. Give the session a
 
 You should now be on a summary page with the new connection. Click `Connect` and enter your Euler login details. Once connected, click `Create a new virtual desktop` and select `Create a new GNOME virtual desktop`. After clicking `Continue` you should be presented with a desktop running on Euler where you can use GUI-based programs.
 
-`Note: Please remember to logout once you no longer require a desktop. NX is very resource-intensive compared to the terminal, which may cause issues if too many people are using it at once.`
+.. note:: Please remember to logout once you no longer require a desktop. NX is very resource-intensive compared to the terminal, which may cause issues if too many people are using it at once.
