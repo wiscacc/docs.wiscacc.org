@@ -12,9 +12,9 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 1
-
-   accessing.rst
-   using.rst
-   developing.rst
+    :maxdepth: 1
+ 
+    accessing.rst
+    using.rst
+    developing.rst
 
