@@ -37,6 +37,7 @@ help:
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "  cae-deploy	to deploy dirhtml-generated files to the WACC website hosted by CAE"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -151,3 +152,7 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+cae-deploy: dirhtml
+	@echo
+	rsync --update --inplace --chmod=u+rwx,g+rwx -av _build/dirhtml/ best-tux.cae.wisc.edu:/home/vhosts/wacc.wisc.edu/html/docs
