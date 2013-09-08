@@ -3,13 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Euler Cluster's documentation!
-=========================================
+Welcome to the Euler Cluster's documentation!
+=============================================
 
-Contents:
+The Euler Cluster is operated by the Wisconsin Applied Computing Center at the University of Wisconsin - Madison.
+
+Contents
+========
 
 .. toctree::
    :maxdepth: 2
+
+   accessing.rst
+   using.rst
+   developing.rst
 
 
 
