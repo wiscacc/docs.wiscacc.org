@@ -4,7 +4,7 @@ Accessing Euler
 
 Euler is accessible via SSH at hostname ``euler.wacc.wisc.edu``. Accounts for research projects may be requested by contacting `Dan Negrut <http://homepages.cae.wisc.edu/~negrut/>`_.
 
-The following describes how to login from various operating systems.
+The following describes how to log in from various operating systems.
 
 ---------------------
 Linux / MacOSX / Unix
