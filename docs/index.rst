@@ -18,3 +18,5 @@ Contents
     using.rst
     developing.rst
 
+    accessing_newton.rst
+    using_newton.rst
